@@ -16,7 +16,7 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
           }).then((result) => {
             if (result.isConfirmed) {
                 eliminarPaciente(id)
-                Swal.fire("Saved!", "", "success");
+                Swal.fire("Paciente eliminado", "", "success");
             } 
           });
     }
